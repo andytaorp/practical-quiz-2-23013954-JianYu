@@ -8,7 +8,7 @@ import React from "react";
  */
 export default function Habit({ habit, onToggleHabit, onDeleteHabit }) {
     return (
-      <li style={{ display: "flex", alignItems: "center", marginBottom: "8px" }}>
+      <li>
         <input
           type="checkbox"
           checked={habit.completed}
