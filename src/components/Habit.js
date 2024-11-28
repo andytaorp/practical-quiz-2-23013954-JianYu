@@ -8,14 +8,14 @@ import React from "react";
  */
 export default function Habit({ habit, onToggleHabit, onDeleteHabit }) {
     return (
-      <li>
+      <li style={{ display: "flex", alignItems: "center", marginBottom: "8px" }}>
         <input
           type="checkbox"
           checked={habit.completed}
           onChange={() => onToggleHabit(habit.id)}
         />
         
-        <span style={{textDecoration: habit.completed ? "line-through" : "none",marginLeft: "8px",flex: 1}}>
+        <span style={{textDecoration: habit.completed ? "line-through" : "none",marginLeft: "8px",flex: 1,}}>
           {habit.name}
         </span>
         
