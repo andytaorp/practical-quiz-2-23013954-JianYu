@@ -16,7 +16,7 @@ export default function AddHabitForm({ onAddHabit }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Enter a new habit"
+        placeholder="Enter a habit name"
         value={habitName}
         onChange={(e) => setHabitName(e.target.value)}
       />
